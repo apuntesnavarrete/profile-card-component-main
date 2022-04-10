@@ -1,0 +1,21 @@
+
+:root {
+    --dark-cyan: #19a2ae ; 
+    --very-dark-desatured-blue: hsl(229, 23%, 23%);
+    --dark-gray:hsl(0, 0%, 59%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+}
+
+body{
+    background-color: var(--dark-cyan);
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.card_content{
+    background-color: ;
+}
