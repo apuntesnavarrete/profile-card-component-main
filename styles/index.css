@@ -4,9 +4,13 @@
     --very-dark-desatured-blue: hsl(229, 23%, 23%);
     --dark-gray:hsl(0, 0%, 59%);
     --Dark-grayish-blue: hsl(227, 10%, 46%);
-
+    --card-fondo: white; 
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: var(--dark-cyan);
 }
@@ -14,8 +18,27 @@ body{
 .main{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card_content{
-    background-color: ;
+    width: 400px;
+    height: 400px;
+    background-color: var(--card-fondo);
+    border-radius: 10px;
+}
+.card_fondo{
+  width: 100%;
+  height: 150px ;
+  border-radius: 10px 10px 0 0 ;
+}
+.card_foto-perfil{
+    position: relative;
+    top: -50px;
+    left: calc(50% - 50px);;
+    width: 100px;
+    border-radius: 50px;
+    border: 5px solid var(--card-fondo);
 }
