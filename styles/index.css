@@ -27,31 +27,41 @@ body{
 
 .card_content{
     width: 350px;
-    height: 400px;
+    height: 385px;
     background-color: var(--card-fondo);
     border-radius: 10px;
 }
 .card_fondo{
-  width: 100%;
-  height: 150px ;
+  background-image: url(/images/bg-pattern-card.svg);
+  height: 140px;
   border-radius: 10px 10px 0 0 ;
 }
 .card_foto-perfil{
     position: relative;
-    top: -50px;
-    left: calc(50% - 50px);;
-    width: 100px;
-    border-radius: 50px;
+    top: calc(100% - 60px);
+    left: calc(50% - 60px);;
+    width: 120px;
+    border-radius: 50%;
     border: 5px solid var(--card-fondo);
 }
 .card_name{
+    margin-top: 80px;
     text-align: center;
-    display: inline-block;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    color: var(--very-dark-desatured-blue);
+    font-weight: 700;
+
     }
+.card_edad{
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
     .card_nation{
         text-align: center;
-        margin: 5px 0px 20px 0 ;
+        margin: 10px 0px 30px 0 ;
+        font-size: 0.9rem;
+        color: var(--Dark-grayish-blue);
+
         }
 
     .card_content_sociales{
@@ -60,6 +70,8 @@ body{
         justify-content: space-around;
         border-top: 0.3px solid hsl(263deg 9% 89%);
         padding: 20px;
+        color: var(--very-dark-desatured-blue);
+
         
     }
     .card_seguidores{
@@ -70,4 +82,6 @@ body{
         margin-top: 3px;
         font-size: 0.6rem;
         letter-spacing: 1px;
+        color: var(--Dark-grayish-blue);
+
     }
