@@ -16,7 +16,11 @@ body{
     font-size: 1.2rem;
     font-family: 'Kumbh Sans', sans-serif;
 }
+.fondo{
+    position: relative;
+    opacity: 0.1;
 
+}
 .main{
     width: 100vw;
     height: 100vh;
