@@ -1,111 +1,103 @@
-
 :root {
-    --dark-cyan: #19a2ae ; 
-    --very-dark-desatured-blue: hsl(229, 23%, 23%);
-    --dark-gray:hsl(0, 0%, 59%);
-    --Dark-grayish-blue: hsl(227, 10%, 46%);
-    --card-fondo: white; 
+  --dark-cyan: #19a2ae;
+  --very-dark-desatured-blue: hsl(229, 23%, 23%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --card-fondo: white;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    min-height: 100vh;
-    background-color: var(--dark-cyan);
-    font-size: 1.2rem;
-    font-family: 'Kumbh Sans', sans-serif;
-    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: right 50vw bottom 50vh, left 64vh top 64vh;
-}
-
-
-.main{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
+body {
+  min-height: 100vh;
+  background-color: var(--dark-cyan);
+  font-size: 1.2rem;
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 64vh top 64vh;
 }
 
-.card_content{
-    width: 350px;
-    height: 385px;
-    background-color: var(--card-fondo);
-    border-radius: 10px;
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
-.card_fondo{
+
+.card_content {
+  width: 350px;
+  height: 385px;
+  background-color: var(--card-fondo);
+  border-radius: 10px;
+}
+.card_fondo {
   background-image: url(/images/bg-pattern-card.svg);
   height: 140px;
-  border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
 }
-.card_foto-perfil{
-    position: relative;
-    top: calc(100% - 60px);
-    left: calc(50% - 60px);;
-    width: 120px;
-    border-radius: 50%;
-    border: 5px solid var(--card-fondo);
+.card_foto-perfil {
+  position: relative;
+  top: calc(100% - 60px);
+  left: calc(50% - 60px);
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid var(--card-fondo);
 }
-.card_name{
-    margin-top: 80px;
-    text-align: center;
-    font-size: 1.4rem;
-    color: var(--very-dark-desatured-blue);
-    font-weight: 700;
-
-    }
-.card_edad{
-    font-weight: 400;
-    color: var(--Dark-grayish-blue);
+.card_name {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--very-dark-desatured-blue);
+  font-weight: 700;
 }
-    .card_nation{
-        text-align: center;
-        margin: 10px 0px 30px 0 ;
-        font-size: 0.9rem;
-        color: var(--Dark-grayish-blue);
+.card_edad {
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+}
+.card_nation {
+  text-align: center;
+  margin: 10px 0px 30px 0;
+  font-size: 0.9rem;
+  color: var(--Dark-grayish-blue);
+}
 
-        }
+.card_content_sociales {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  border-top: 0.3px solid hsl(263deg 9% 89%);
+  padding: 20px;
+  color: var(--very-dark-desatured-blue);
+}
+.card_seguidores {
+  font-weight: 700;
+}
 
-    .card_content_sociales{
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        border-top: 0.3px solid hsl(263deg 9% 89%);
-        padding: 20px;
-        color: var(--very-dark-desatured-blue);
+.card_seguidores_sub {
+  margin-top: 3px;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  color: var(--Dark-grayish-blue);
+}
+@media (max-width: 450px) {
+  body {
+    background-position: right 50vw bottom 50vh, left 19vh top 55vh;
+    overflow: scroll;
+  }
+}
 
-        
-    }
-    .card_seguidores{
-        font-weight: 700;
-    }
-
-    .card_seguidores_sub{
-        margin-top: 3px;
-        font-size: 0.6rem;
-        letter-spacing: 1px;
-        color: var(--Dark-grayish-blue);
-
-    }
-    @media (max-width: 450px) {
-        body {
-            background-position: right 50vw bottom 50vh, left 19vh top 55vh;
-            overflow: scroll;
-        }
-     
-    }
-
-
-    @media (min-width: 768px) {
-        body {
-            background-position: right 50vw bottom 50vh, left 42vh top 61vh;
-        }
-    }
-    @media (min-width: 1300px) {
-        body {
-            background-position: right 50vw bottom 50vh, left 91vh top 63vh;
-        }
-      }
+@media (min-width: 768px) {
+  body {
+    background-position: right 50vw bottom 50vh, left 42vh top 61vh;
+  }
+}
+@media (min-width: 1300px) {
+  body {
+    background-position: right 50vw bottom 50vh, left 91vh top 63vh;
+  }
+}
